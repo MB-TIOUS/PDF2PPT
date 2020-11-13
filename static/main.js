@@ -169,7 +169,6 @@ $("#crop-btn").on('click', function () {
       var imagem = cropper.getCroppedCanvas().toDataURL("image/png");
       data_arr.push(String('<img id="' + imagem + '"></img>'));
       imagem = null;
-      console.log("abc");
       cropper.destroy();
       $('#modal').modal('hide');
     });
